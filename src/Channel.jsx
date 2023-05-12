@@ -5,11 +5,11 @@ export const Channel = (props) => {
       className="flex shadow-xl shadow-slate-500 overflow-hidden rounded-2xl"
       key={channel.id}
     >
-      <img src={`${channel.image}`} width="150" />
+      <img src={`${channel.image}`} className="w-[100px] md:w-[150px]" />
       <div style={{ backgroundColor: `#${channel.color}` }}>
-        <div className="flex flex-col h-full justify-center mx-4">
+        <div className="flex flex-col h-full justify-center mx-2 md:mx-4 mb-4">
           <div className="text-xl mb-4 ml-4 ">{channel.name}</div>
-          <audio controls>
+          <audio controls style={{ width: "250px" }}>
             <source src={`${channel.liveaudio.url}`} type="audio/mpeg" />
           </audio>
         </div>

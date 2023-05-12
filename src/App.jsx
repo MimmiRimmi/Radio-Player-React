@@ -54,7 +54,7 @@ function App() {
           />
         </div>
 
-        <div className="flex flex-wrap ml-20 mt-14 gap-6">
+        <div className="flex flex-wrap md:ml-20 mt-14 gap-6">
           {loading && <RadioSkeleton cards={52} />}
           {renderChannels()}
         </div>
